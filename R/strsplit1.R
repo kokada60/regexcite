@@ -1,3 +1,3 @@
-strsplit1 <- function(y, split) {
-  strsplit(y, split=split)[[1]]
+strsplit1 <- function(x, split) {
+  strsplit(x, split=split)[[1]]
 }
