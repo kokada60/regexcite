@@ -4,12 +4,14 @@
 \alias{str_split_one}
 \title{Split string}
 \usage{
-str_split_one(string, pattern, n = inf)
+str_split_one(string, pattern, n = Inf)
 }
 \arguments{
-\item{x}{A character vector with element.}
+\item{string}{A character vector with element.}
 
-\item{split}{What to split on.}
+\item{pattern}{What to split on.}
+
+\item{n}{how many elements returned?}
 }
 \value{
 A character vector one-dimensional.
@@ -19,5 +21,5 @@ Split string
 }
 \examples{
 x <- "alpha,bravo,gamma,delta"
-strsplit(x, split=",")
+str_split_one(x, pattern=",")
 }
